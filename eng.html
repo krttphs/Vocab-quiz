@@ -59,15 +59,23 @@
       font-size: 2rem;
       font-family: Arial, sans-serif;
     }
-    .loader{
+
+    input[type="radio"].accent-black:checked {
+      accent-color: green;
+      /* เปลี่ยนเป็นสีที่ต้องการ */
+    }
+
+    .loader {
       animation: loaderAnimation 0.3s ease-in-out forwards;
     }
-    @keyframes loaderAnimation{
-      from{
+
+    @keyframes loaderAnimation {
+      from {
         transform: translateY(30px);
         opacity: 0;
       }
-      to{
+
+      to {
         transform: translateY(0px);
         opacity: 100;
       }
